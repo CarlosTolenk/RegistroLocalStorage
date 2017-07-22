@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+     <link rel="stylesheet" href="css/style.css">
+     <!--Let browser know website is optimized for mobile-->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <title>AcadeMiNext</title>
+   </head>
+
+   <body>
+
+     <div class="titulo">
+       <h3 class="card-panel teal white-text">Evaluacion de Asignaturas</h3>
+      </div>
+      <div class="row">
+        <div class="col s6 push-s3">
+          <form  action="index.html">
+            <div class="input-field col s10">
+                <input placeholder="001" id="codigo" type="text" class="validate">
+                <label for="codigo">Codigo</label>
+            </div>
+
+            <div class="input-field col s10">
+                <input placeholder="Nombre" id="nombre" type="text" class="validate">
+                <label for="nombre">Nombre</label>
+            </div>
+
+            <div class="input-field col s10">
+                <input placeholder="70" id="nota" type="text" class="validate">
+                <label for="nota">Nota</label>
+            </div>
+
+           <div class="col s9 btn-submit">
+             <button class="btn waves-effect submit" type="button" id="registrar">Registrar
+                <i class="material-icons right">send</i>
+              </button>
+           </div>
+          </form>
+        </div>
+      </div> <!-- End Form-->
+
+          <div id="myTable" class="col s10 card-panel">
+          </div>
+
+       <div class="row">
+         <div class="card-panel col s3 push-s1">
+           <h4>Promedio</h4>
+           <button class="btn waves-effect" type="submit" name="action">Calcular
+              <i class="material-icons right">send</i>
+            </button>
+         </div>  <!-- End Promedio-->
+         <div class="card-panel col s3 push-s1">
+           <h4>Mayor Calificacion</h4>
+           <button class="btn waves-effect" type="submit" name="action">Buscar
+              <i class="material-icons right">send</i>
+            </button>
+         </div>  <!-- End Mayor Calificacion-->
+         <div class="card-panel col s3 push-s1">
+           <h4>Menos Calificacion</h4>
+           <button class="btn waves-effect" type="submit" name="action">Buscar
+              <i class="material-icons right">send</i>
+            </button>
+         </div>  <!-- End Menor Calificacion-->
+       </div> <!-- End Row principal-->
+
+
+     <!--Import jQuery before materialize.js-->
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+     <script type="text/javascript" src="js/index.js">
+
+     </script>
+   </body>
+  </html>
