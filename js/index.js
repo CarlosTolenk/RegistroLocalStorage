@@ -4,7 +4,8 @@
       var tabla = "";
       var divTabla = $("#myTable");
 
-      tabla += '<table>';
+      tabla += '<table class="highlight centered">';
+      tabla += '<thead>';
       tabla += '<tr>';
       tabla += '<th>Codigo</th>';
       tabla += ' <th>Nombre</th>';
@@ -12,6 +13,8 @@
       tabla += '<th>Editar</th>';
       tabla += '<th>Elimimar</th>';
       tabla += '</tr>';
+      tabla += '</thead>';
+
 
       for (var i = 0; i < localStorage.length; i++) {
 
@@ -51,6 +54,7 @@
         localStorage.removeItem(codigo);
         listarEstudiante();
     }
+
 
 
 
